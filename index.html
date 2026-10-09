@@ -71,7 +71,7 @@ dialog .x{float:right;background:none;border:0;color:var(--tx);font-size:26px;cu
 </head>
 <body>
 <div id="pg"></div>
-<nav><div class="w"><b>SRP</b><a href="#pj">Projects</a><a href="#rs">Research</a><a href="#in">Internships</a><a href="#vo">Volunteer</a><a href="#ce">Certifications</a><a href="#sk">Skills</a><a href="#ct">Contact</a><button class="ic" id="th" title="Dark / light">◐</button></div></nav>
+<nav><div class="w"><b>Portfiralio</b><a href="#pj">Projects</a><a href="#rs">Research</a><a href="#in">Internships</a><a href="#vo">Volunteer</a><a href="#ce">Certifications</a><a href="#sk">Skills</a><a href="#ct">Contact</a><button class="ic" id="th" title="Dark / light">◐</button></div></nav>
 
 <header class="w hero">
   <div>
@@ -194,7 +194,7 @@ const $=s=>document.querySelector(s),dev=location.protocol==='file:'||['localhos
 let mode='all',flt='all';
 const im=(s,a,k)=>`<img src="${s}" alt="${a}" loading="lazy" ${k?'data-k=1':''} onerror="miss(this)">`;
 function miss(e){const f=e.closest('figure'),s=e.getAttribute('src');
-  if(e.dataset.k){e.outerHTML=`<div class="miss">${dev?'Add '+s:'SRP'}</div>`;return}
+  if(e.dataset.k){e.outerHTML=`<div class="miss">${dev?'Add '+s:'Portfiralio'}</div>`;return}
   if(dev){e.outerHTML=`<div class="miss">Add<br>${s}</div>`;return}
   const c=e.closest('.ac');(f||e).remove();if(c&&c.dataset.r&&!c.querySelector('figure'))c.remove()}
 function toast(t){const e=$('#ts');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800)}
